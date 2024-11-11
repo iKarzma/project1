@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../nav.css">
+  <title>Services</title>
+</head>
+<style>
+  main {
+    padding: 20px;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    animation: bonus 1s forwards; /* Apply animation */
+}
+@keyframes bonus {
+  from {
+      opacity: 0; /* Start transparent */
+      transform: translateX(100px); /* Start slightly below */
+  }
+  to {
+      opacity: 1; /* End fully visible */
+      transform: translateX(0); /* End in original position */
+  }
+}
+header h1 {
+    margin: 0;
+}
+.service {
+    background: #f4f4f4;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    animation: bonus 1s forwards; /* Apply animation */
+}
+@keyframes bonus {
+  from {
+      opacity: 0; /* Start transparent */
+      transform: translateX(100px); /* Start slightly below */
+  }
+  to {
+      opacity: 1; /* End fully visible */
+      transform: translateX(0); /* End in original position */
+  }
+}
+.service h2 {
+    color: #333;
+}
+</style>
+<body>
+  <nav>
+    <ul>
+      <li><a href="../../home.html">Home</a></li>
+      <li><a href="../about/about.html">About</a></li>
+      <li><a href="../about/ser.html">Services</a></li>
+      <li><a href="../about/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Our Services</h1>
+</header>
+
+<main>
+    <section id="service1" class="service">
+        <h2>Service 1</h2>
+        <p>Discover your Talent</p>
+    </section>
+
+    <section id="service2" class="service">
+        <h2>Service 2</h2>
+        <p>Learn on Talent</p>
+    </section>
+
+    <section id="service3" class="service">
+        <h2>Service 3</h2>
+        <p>Challenges To Practice on Talent</p>
+    </section>
+</main>
+  <!-- start footer section -->
+  <footer>
+    <p>&copy; 2024 smart village. All rights reserved.</p>
+    <p class="copyright">Designed by Talent team</p>
+
+  </footer>
+  <!-- start footer section -->
+</body>
+</html>

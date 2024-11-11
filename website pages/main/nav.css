@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+
+}
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  animation: bonus 1s forwards;
+}
+@keyframes bonus {
+  from {
+      opacity: 0; /* Start transparent */
+      transform: translateX(100px); /* Start slightly below */
+  }
+  to {
+      opacity: 1; /* End fully visible */
+      transform: translateX(0); /* End in original position */
+  }
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative; /* For the underline effect */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+a:hover {
+  color: #f0db4f; /* Change color on hover */
+}
+
+a:hover::before {
+  width: 100%; /* Expand underline on hover */
+}
+    /* Basic Styling - Customize as needed */
+    .about-section {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .team-member {
+      display: inline-block; /* Arrange team members in a row */
+      margin: 20px;
+      width: 210px; /* Adjust width as needed */
+      text-align: left;
+    }
+    .team-member3{
+      display: inline-block; /* Arrange team members in a row */
+      margin: 20px;
+      width: 220px; /* Adjust width as needed */
+      text-align: left;
+    }
+    /* start footer style  */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: absolute; /* Make the footer sticky */
+  bottom: 0; /* Position at the bottom of the page */
+  width: 100%; /* Full width */
+  animation: bonus 1s forwards; /* Apply animation */
+}
+@keyframes bonus {
+  from {
+      opacity: 0; /* Start transparent */
+      transform: translateX(100px); /* Start slightly below */
+  }
+  to {
+      opacity: 1; /* End fully visible */
+      transform: translateX(0); /* End in original position */
+  }
+}
+
+/* Style for copyright text */

@@ -1,0 +1,50 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px); /* Start slightly below */
+  animation: fadeIn 1s forwards; /* Apply animation */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Start transparent */
+      transform: translateY(1000px); /* Start slightly below */
+  }
+  to {
+      opacity: 1; /* End fully visible */
+      transform: translateY(0); /* End in original position */
+  }
+}
+button{
+  margin-top: 20px;
+  margin-left: 90px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color:white;
+  color: black;
+  transition:  all 1s ease-in-out;
+}
+
+button a{
+  text-decoration: none;
+  color: white;
+}
+button a:hover{
+  color: black;
+}
